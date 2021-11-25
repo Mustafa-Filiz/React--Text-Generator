@@ -33,7 +33,6 @@ export const textSlice = createSlice({
             state.isLoading = true;
         },
         [fetchDataAsync.fulfilled]: (state, action) => {
-            // console.log(action.payload)
             state.text = action.payload;
             state.isLoading = false;
         },
